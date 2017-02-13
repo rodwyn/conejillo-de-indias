@@ -1,0 +1,10 @@
+body {
+  background-color: $body-bg-color;
+  color: $dark-gray-color;
+  font-size: $font-size-root;
+  line-height: 1;
+
+  .container-fluid {
+    max-width: 1200px;
+  }
+}

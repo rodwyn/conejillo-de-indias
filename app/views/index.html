@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <base href="/">
+</head>
+<body  class="body-wrapper" ng-app="app">
+  <ul>
+        <li><a href="#" ui-sref="home">First</a></li>
+        <li><a href="#" ui-sref="cart">Second</a></li>
+    </ul>
+
+  <div class="main-wrapper">
+    <div ui-view="header"></div>
+    <div ui-view="content"></div>
+    <div ui-view="footer"></div>
+  </div>
+</body>
+</html>
