@@ -1,0 +1,22 @@
+#OSX Files
+.DS_Store
+
+#Yarn Files
+yarn.lock
+
+#NodeJs Files
+/node_modules
+npm-debug.log
+
+#Sprites Files
+/app/sprites
+/app/styles/sprite-base.scss
+
+#Dist Files
+/dist
+
+#Typing Files
+/typings
+
+#Coverage Test Files
+/app/scripts/tests/coverage
