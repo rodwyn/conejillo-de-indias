@@ -42,3 +42,25 @@ $font-weight-semibold: 300;
 $font-weight-normal: 200;
 
 $icon-font: 'FontAwesome';
+
+/* === VARIABLES === */
+$primary-color:#90AC2B;
+$primary-color-light:#4DC8CF;
+$secondary-color:#252525;
+
+$text-slider-title:#797979;
+$white-color: #FFFFFF;
+$light-color: #F0F0F0;
+$border-light: #E4E4E4;
+$border-lighter: #ECECEC;
+$border-gray: #D0D0D0;
+
+$facebook-color:#46639F;
+$google-plus-color:#D6513E;
+$twitter-color:#0084B4;
+$dribbble-color:#C73B6F;
+$tumblr-color:#36465D;
+
+@function tint($primary-color, $percentage) {
+  @return mix(white, $primary-color, $percentage);
+}

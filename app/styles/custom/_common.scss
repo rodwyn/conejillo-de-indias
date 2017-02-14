@@ -1,0 +1,191 @@
+.container {
+  width: 100%;
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
+    width: 750px;
+  }
+  @include desktops {
+    width: 970px;
+  }
+  @include large-desktops {
+    width: 1170px;
+  }
+}
+
+body.bodyColor.default {
+  background-color: #F5F5F5;
+}
+
+body.bodyColor.pattern-01 {
+  background-attachment: fixed;
+  background-image: url('data:image/png;../images/partners/001.png');
+  background-position: center;
+  background-repeat: repeat;
+}
+
+body.bodyColor.pattern-02 {
+  background-attachment: fixed;
+  background-image: url('data:image/png;../images/partners/002.png');
+  background-position: center;
+  background-repeat: repeat;
+}
+
+body.bodyColor.pattern-03 {
+  background-attachment: fixed;
+  background-image: url('data:image/png;../images/partners/003.png');
+  background-position: center;
+  background-repeat: repeat;
+}
+
+body.bodyColor.pattern-04 {
+  background-attachment: fixed;
+  background-image: url('data:image/png;../images/partners/004.png');
+  background-position: center;
+  background-repeat: repeat;
+}
+
+body.bodyColor.pattern-06 {
+  background-attachment: fixed;
+  background-image: url('data:image/png;../images/partners/005.png');
+  background-position: center;
+  background-repeat: repeat;
+}
+
+body.bodyColor.pattern-07 {
+  background-attachment: fixed;
+  background-image: url('data:image/png;../images/partners/005.png');
+  background-position: center;
+  background-repeat: repeat;
+}
+
+body.bodyColor.pattern-05 {
+  background-attachment: fixed;
+  background-image: url('data:image/png;../images/partners/005.png');
+  background-position: center;
+  background-repeat: repeat;
+}
+
+body.bodyColor.wrapper {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  @include mobile {
+    max-width: 450px;
+  }
+  @include tablet {
+    max-width: 750px;
+  }
+  @include desktops {
+    max-width: 970px;
+  }
+  @include large-desktops {
+    max-width: 1170px;
+  }
+}
+
+body.bodyColor .header {
+  @include mobile {
+    max-width: 450px;
+  }
+  @include tablet {
+    max-width: 750px;
+  }
+  @include desktops {
+    max-width: 970px;
+  }
+  @include large-desktops {
+    max-width: 1170px;
+  }
+}
+
+body.bodyColor .bb-fixed-header {
+  left: auto;
+  right: auto;
+
+  @include mobile {
+    max-width: 450px;
+    width: 100%;
+  }
+  @include tablet {
+    max-width: 750px;
+  }
+  @include desktops {
+    max-width: 970px;
+  }
+  @include large-desktops {
+    max-width: 1170px;
+  }
+}
+
+body.static .bb-fixed-header {
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  outline: 0;
+  padding: 9px 0;
+  text-align: center;
+  text-transform: uppercase;
+  @include border-radius(4px);
+  @include transition(all 0.3s ease);
+  @include mobile {
+    font-size: 15px;
+    padding: 13px 0;
+  }
+  @include tablet {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+  @include desktops {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+  @include large-desktops {
+    font-size: 15px;
+    padding: 13px 0;
+  }
+}
+
+.btn-border {
+  @include border-radius(0);
+  border: 2px solid #B1B1B1;
+  color: $secondary-color;
+  font-weight: 700;
+  padding: 7px 15px;
+
+  @include large-desktops {
+    font-size: 15px;
+    padding: 9px 15px;
+  }
+
+  i {
+    font-size: 17px;
+    font-weight: 700;
+    padding-left: 20px;
+  }
+}
+
+.main-wrapper {
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+a {
+  @include transition(all 0.3s ease);
+  color: rgba($white-color, 0.25);
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: rgba($white-color, 0.5);
+  outline: 0;
+}
+
+.media > .pull-left,
+.media-left {
+  float: left;
+}

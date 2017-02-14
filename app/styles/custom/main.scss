@@ -1,13 +1,19 @@
+
+@import 'mixins/mixins';
 @import 'variables';
-@import 'badges';
-@import 'headings';
-@import 'lists';
-@import '/partials/body';
+@import 'mixins/media-query';
+@import 'lib/reset';
+@import 'common';
 @import '/partials/header';
-@import '/partials/subheader';
-@import '/partials/navbar';
-@import '/partials/breadcrumb';
-@import '/partials/banner';
-@import '/partials/tab-secondary';
-@import '/partials/other-products';
-@import '/partials/footer';
+// @import 'badges';
+// @import 'headings';
+// @import 'lists';
+// @import '/partials/body';
+
+// @import '/partials/subheader';
+// @import '/partials/navbar';
+// @import '/partials/breadcrumb';
+// @import '/partials/banner';
+// @import '/partials/tab-secondary';
+// @import '/partials/other-products';
+// @import '/partials/footer';

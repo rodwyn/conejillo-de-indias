@@ -10,12 +10,13 @@ import routing from './app.config';
 
 (function () {
   angular.module('app', ['ui.router']).config(
-    function($stateProvider, $urlRouterProvider) {
+    function($stateProvider, $urlRouterProvider, $locationProvider) {
+      $locationProvider.html5Mode(true);
       // Default route
       $urlRouterProvider.otherwise('/home');
 
       var header = {
-        template: '<h1>Im header</<h1>',
+        templateUrl: '/views/partials/header.html',
         controller: function($scope) {}
       }
 
@@ -48,21 +49,6 @@ import routing from './app.config';
             footer: footer
           }
         });
-
-      // var helloState = {
-      //   name: 'hello',
-      //   url: '/hello',
-      //   template: '<h3>hello world!</h3>'
-      // }
-      //
-      // var aboutState = {
-      //   name: 'about',
-      //   url: '/about',
-      //   template: '<h3>Its the UI-Router hello world app!</h3>'
-      // }
-      //
-      // $stateProvider.state(helloState);
-      // $stateProvider.state(aboutState);
     }
   )
 })();

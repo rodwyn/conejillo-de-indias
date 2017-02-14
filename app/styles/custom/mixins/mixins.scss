@@ -1,0 +1,82 @@
+/* === MIXINS === */
+@mixin box-sizing($box) {
+  box-sizing: $box;
+}
+
+@mixin border-radius($radius: 4px) {
+  border-radius: $radius;
+}
+
+@mixin box-shadow($horizontal: 0, $vertical: 1px, $blur: 2px, $color: #CCC) {
+  box-shadow: $horizontal $vertical $blur $color;
+}
+
+@mixin opacity ( $value: 0.5 ) {
+  filter: alpha(opacity=$value);
+  opacity: $value;
+}
+
+@mixin transition($args...) {
+  transition: $args;
+}
+
+@mixin transform($transforms) {
+  transform: $transforms;
+}
+
+@mixin add-border($size, $color, $position) {
+  @if $position == 'all' {
+    border: $size solid $color;
+  }
+  @else if $position == 'top' {
+    border-top: $size solid $color;
+  }
+  @else if $position == 'bottom' {
+    border-bottom: $size solid $color;
+  }
+  @else if $position == 'right' {
+    border-right: $size solid $color;
+  }
+  @else if $position == 'left' {
+    border-left: $size solid $color;
+  }
+  @else if $position == 'top-bottom' {
+    border-bottom: $size solid $color;
+    border-top: $size solid $color;
+  }
+  @else if $position == 'right-left' {
+    border-left: $size solid $color;
+    border-right: $size solid $color;
+  }
+  @else if $position == 'top-left' {
+    border-left: $size solid $color;
+    border-right: $size solid $color;
+  }
+  @else if $position == 'top-right' {
+    border-left: $size solid $color;
+    border-right: $size solid $color;
+  }
+  @else if $position == 'bottom-left' {
+    border-left: $size solid $color;
+    border-right: $size solid $color;
+  }
+  @else if $position == 'bottom-right' {
+    border-left: $size solid $color;
+    border-right: $size solid $color;
+  }
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+  // background: nth(nth($color-stops, 1), 1);
+  // background: -webkit-linear-gradient
+  // (legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+@mixin background-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  // -webkit-background-size: cover;
+  background-size: cover;
+  height: auto;
+}
